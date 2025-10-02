@@ -24,4 +24,4 @@ Built with **HTML, CSS, and JavaScript**, this project blends creativity with in
 ## How to Run
 1. Clone this repository  
    ```bash
-   git clone https://github.com/yourusername/ai-mood-adaptive-story.git
+   git clone https://github.com/Adi432144/AI-Mood-Adaptive-Story-Proto-type.git
