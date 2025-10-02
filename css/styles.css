@@ -1,0 +1,185 @@
+/* General container */
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 35px; /* clean spacing between each section */
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Heading section */
+.heading-section h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c2c2c;
+  text-align: center;
+  margin: 0;
+}
+
+/* Emoji + mood section */
+.emoji-section {
+  text-align: center;
+}
+.emoji-box {
+  font-size: 96px;
+  margin-bottom: 15px;
+}
+.emoji-box img {
+  width: 80px;  /* adjust size */
+  height: 80px;
+  object-fit: contain;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.emoji-box, #moodEmoji {
+  text-align: center;
+}
+
+.emoji-img {
+  width: 80px;      /* adjust size as needed */
+  height: 80px;
+  object-fit: contain;
+}
+
+#moodDisplay {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+}
+
+
+
+
+/* Prompt section */
+.prompt-section {
+  text-align: center; /* Centers the textarea container */
+  margin-top: 20px;   /* Adds spacing above the textarea */
+}
+
+
+.prompt-section textarea {
+  width: 70%;
+  min-height: 100px;
+  max-width: 600px;     /* Optional: limits width on large screens */
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  padding: 12px 14px;   /* Slightly smaller padding */
+  resize: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block; /* Makes textarea respect text-align center */
+}
+
+.prompt-section textarea:focus {
+  outline: none;
+  border: 1px solid #a370f0;
+  box-shadow: 0 0 6px rgba(163, 112, 240, 0.3);
+}
+
+
+/* Button section (centered button) */
+.button-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* Story section */
+.story-section {
+  text-align: center;
+}
+#storyLink {
+  font-weight: 600;
+  text-decoration: none;
+  color: #7b52b9;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+#storyLink:hover {
+  text-decoration: underline;
+  color: #5b3b8a;
+}
+#storyLinkBox {
+  margin-top: 20px;
+  text-align: center;
+}
+#storyLink {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
+.fade-heading {
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1;
+  }
+
+#greetingMessage {
+  margin-top: 90px;   /* creates space below the top bar */
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+#dynamicHeading {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#moodEmoji {
+  margin-top: 20px;
+}
+/* Hover effect for dynamic heading */
+#dynamicHeading:hover {
+  color: #00cff4;
+  transform: scale(1.1) rotate(-2deg);
+  text-shadow: 0 0 15px rgba(255, 235, 59, 0.7);
+  cursor: pointer;
+}
+
+/* Click animation for dynamic heading */
+#dynamicHeading.clicked {
+  animation: wiggle 0.5s ease;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+#greetingMessage {
+  font-size: 2rem;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect like h1 */
+#greetingMessage:hover {
+  color: #ffeb3b;
+  transform: scale(1.05) rotate(-2deg);
+  text-shadow: 0 0 15px rgba(255, 235, 59, 0.7);
+}
+
+/* Click animation */
+#greetingMessage.clicked {
+  animation: wiggle 0.5s ease;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}

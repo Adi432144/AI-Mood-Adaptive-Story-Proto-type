@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Mood Adaptive Story</title>
+  <link rel="stylesheet" href="/css/button.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/top bar.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <style>
+    /* Greeting message animation */
+    #greetingMessage { font-size: 2rem; margin: 20px 0; cursor: pointer; transition: all 0.3s ease; }
+    #greetingMessage:hover { color: #ffeb3b; transform: scale(1.05) rotate(-2deg); text-shadow: 0 0 15px rgba(255,235,59,0.7); }
+    #greetingMessage.clicked { animation: wiggle 0.5s ease; }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+  <!-- Date & Time -->
+  <div class="info-box">
+    <div class="top-bar-emoji" id="dateTimeIcon">⏳</div>
+    <div class="info-text" id="dateTime">Loading...</div>
+  </div>
+
+  <!-- Location -->
+  <div class="info-box">
+    <div class="top-bar-emoji" id="locationIcon">🌍</div>
+    <div class="info-text" id="location">Detecting...</div>
+  </div>
+
+  <!-- Weather -->
+  <div class="info-box">
+    <div class="top-bar-emoji" id="weatherIcon">🌤️</div>
+    <div class="info-text" id="weather">Fetching weather...</div>
+  </div>
+</div>
+
+
+  <div class="heading-section">
+    <h1 id="dynamicHeading" class="fade-heading">AI Mood Adaptive Story</h1>
+  </div>
+
+  <div id="greetingMessage"></div>
+
+  <div class="emoji-section">
+    <div class="emoji-box" id="moodEmoji">😊</div>
+    <div id="moodDisplay">Your mood will appear here...</div>
+  </div>
+
+  <div class="prompt-section">
+    <textarea id="moodPrompt" placeholder="Type something about your mood..."></textarea>
+  </div>
+
+  <div class="button-section">
+    <button class="cssbuttons-io-button">
+      Detect Mood
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" 
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </span>
+    </button>
+  </div>
+
+  <div id="storyContainer" style="border:2px solid #ccc;border-radius:12px;padding:15px;margin-top:20px;height:250px;overflow-y:auto;background-color:#f9f9f9;font-size:18px;line-height:1.5;">
+    <div id="storyLinkBox">Your story will appear here...</div>
+  </div>
+
+  <script src="/js/script.js"></script>
+  <script src="/js/weather.js"></script>
+  <script>
+    // Display username from localStorage
+    const greetingBox = document.getElementById("greetingMessage");
+    const userName = localStorage.getItem("username");
+    if(userName && greetingBox){
+      greetingBox.textContent = `${userName}, how are you feeling today?`;
+
+      greetingBox.addEventListener("click", ()=>{
+        greetingBox.classList.add("clicked");
+        setTimeout(()=> greetingBox.classList.remove("clicked"), 500);
+      });
+    }
+  </script>
+  <footer class="dynamic-footer">
+  <div class="footer-overlay"></div>
+  <div class="footer-content">
+    <h2 class="footer-heading">🌟 Mood Adaptive Story</h2>
+    <p class="footer-description">
+      This website adapts to <span class="flowing-text">your mood</span>.  
+      The background, fonts, emojis, and even the story change based on how you feel.  
+      Just type your emotions, and watch the world transform. 💫
+    </p>
+    <p class="footer-tag"></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "happy": {
+    "fontFile": "fonts/Milkyway DEMO.ttf",
+    "fontWeight": "bold",
+    "fontStyle": "normal",
+    "color": "#FFD700"
+  },
+  "sad": {
+    "fontFile": "fonts/Everything You Want - OTF.otf",
+    "fontWeight": "normal",
+    "fontStyle": "italic",
+    "color": "#1E90FF"
+  },
+  "fear": {
+    "fontFile": "fonts/Waen Ronta Trial.ttf",
+    "fontWeight": "bold",
+    "fontStyle": "italic",
+    "color": "#8B0000"
+  },
+  "disgust": {
+    "fontFile": "fonts/InsideOut-DAp0.ttf",
+    "fontWeight": "normal",
+    "fontStyle": "normal",
+    "color": "#556B2F"
+  },
+  "angry": {
+    "fontFile": "fonts/AngryFontNew-Regular.ttf",
+    "fontWeight": "900",
+    "fontStyle": "normal",
+    "color": "#FF4500"
+  },
+  "neutral": {
+    "fontFile": "fonts/Quano DEMO.otf",
+    "fontWeight": "normal",
+    "fontStyle": "normal",
+    "color": "#000000"
+  }
+}

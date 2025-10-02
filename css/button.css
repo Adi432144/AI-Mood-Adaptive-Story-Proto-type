@@ -1,0 +1,141 @@
+.cssbuttons-io-button {
+  background: linear-gradient(135deg, #a370f0, #7b52b9);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0.35em 3.3em 0.35em 1.2em;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(123, 82, 185, 0.4);
+  overflow: hidden;
+  position: relative;
+  height: 3em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Subtle lift on hover */
+.cssbuttons-io-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #925ef5, #6939a5);
+}
+
+/* Inner icon box */
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em rgba(123, 82, 185, 0.4);
+  right: 0.3em;
+  transition: all 0.3s ease;
+}
+
+/* Icon expands smoothly on hover */
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+  border-radius: 0.9em;
+}
+
+/* Arrow inside */
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s ease;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.2em);
+}
+
+/* Click effect */
+.cssbuttons-io-button:active {
+  transform: scale(0.97);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+
+/* Read now button css*/
+/* From Uiverse.io by vinodjangid07 */ 
+.button-wrapper {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  height: 10vh;           /* full screen height */
+}
+
+.bookmarkBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 12);
+  display: flex;              /* ✅ FIXED */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  gap: 6px;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.3s;
+}
+
+.icon {
+  border-radius: 1px;
+  fill: black;   /* make sure icon stays visible */
+}
+
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
+}

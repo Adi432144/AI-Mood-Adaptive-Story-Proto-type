@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Mood-Adaptive Story User</title>
+  <link rel="stylesheet" href="/css/footer.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      text-align: center;
+      animation: bgAnimation 10s infinite alternate;
+    }
+
+    @keyframes bgAnimation {
+      0% { background: linear-gradient(135deg, #6a11cb, #2575fc); }
+      50% { background: linear-gradient(135deg, #ff512f, #dd2476); }
+      100% { background: linear-gradient(135deg, #1fa2ff, #12d8fa); }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    h1:hover { color: #ffeb3b; transform: scale(1.1) rotate(-2deg); text-shadow: 0 0 15px rgba(255,235,59,0.7); }
+    h1.clicked { animation: wiggle 0.5s ease; }
+
+    @keyframes wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(-5deg); }
+      75% { transform: rotate(3deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    h2 { font-size: 1.5rem; margin-bottom: 30px; opacity: 0; animation: fadeInText 2s forwards 2s; }
+
+    input {
+      padding: 12px 20px;
+      border-radius: 12px;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+      margin-bottom: 20px;
+      transition: transform 0.2s;
+    }
+    input:focus { transform: scale(1.05); box-shadow: 0 0 15px rgba(255,255,255,0.6); }
+
+    button {
+      padding: 12px 30px;
+      border-radius: 12px;
+      border: none;
+      background-color: #ff6a00;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover { background-color: #ff9500; transform: scale(1.1); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+    #greeting { margin-top: 30px; font-size: 2rem; cursor: pointer; transition: all 0.3s ease; }
+    #greeting:hover { color: #ffeb3b; transform: scale(1.05) rotate(-2deg); text-shadow: 0 0 15px rgba(255,235,59,0.7); }
+    #greeting.clicked { animation: wiggle 0.5s ease; }
+  </style>
+</head>
+<body>
+  <h1 id="mainHeading">Welcome to AI Mood-Adaptive Story!</h1>
+  <h3>Please enter your name below to begin your journey</h3>
+  <input type="text" id="usernameInput" placeholder="Enter your name">
+  <button id="startBtn">Start</button>
+  <div id="greeting"></div>
+
+  <script>
+    const startBtn = document.getElementById('startBtn');
+const usernameInput = document.getElementById('usernameInput');
+const heading = document.getElementById('mainHeading');
+
+startBtn.addEventListener('click', () => {
+  const name = usernameInput.value.trim();
+  if(name){
+    localStorage.setItem("username", name);
+    window.location.href = "index.html"; // <-- include .html
+  } else {
+    alert("Please enter your name to continue!");
+  }
+});
+
+usernameInput.addEventListener('keypress', e => { 
+  if(e.key === 'Enter') startBtn.click(); 
+});
+
+// h1 click animation
+heading.addEventListener('click', () => {
+  heading.classList.add('clicked');
+  setTimeout(() => heading.classList.remove('clicked'), 500);
+});
+
+  </script>
+<footer class="dynamic-footer">
+  <div class="footer-overlay"></div>
+  <div class="footer-content">
+    <h1 class="footer-heading">🌟 Mood Adaptive Story</h2>
+    <p class="footer-description">
+      This website adapts to <span class="flowing-text">your mood</span>.  
+      The background, fonts, emojis, and even the story change based on how you feel.  
+      Just type your emotions, and watch the world transform. 💫
+    </p>
+    <p class="footer-tag"></p>
+  </div>
+</footer>
+</body>
+</html>

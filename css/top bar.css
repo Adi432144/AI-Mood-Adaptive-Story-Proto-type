@@ -1,0 +1,56 @@
+.top-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  gap: 30px;
+}
+
+.info-box {
+  flex: 1;
+  display: flex;                     /* Arrange emoji + text side by side */
+  align-items: center;               /* Vertical alignment */
+  gap: 25px;                         /* Space between emoji & text */
+  background:white;
+  color: #000000;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: default;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Emoji box like mood emoji */
+.top-bar-emoji {
+  font-size: 40px;        /* Bigger like mood emoji */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text */
+.info-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Weather icons (fallback from API) */
+.weather-icon {
+  vertical-align: middle;
+  height: 24px;
+}
+
+@media(max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

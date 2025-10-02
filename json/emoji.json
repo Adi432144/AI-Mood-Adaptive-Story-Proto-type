@@ -1,0 +1,32 @@
+{
+  "happy": {
+    "alt": "😊",
+    "webp": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60a/512.webp",
+    "gif": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60a/512.gif"
+  },
+  "sad": {
+    "alt": "😢",
+    "webp": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f622/512.webp",
+    "gif": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f622/512.gif"
+  },
+  "angry": {
+    "alt": "😠",
+    "webp": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f620/512.webp",
+    "gif": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f620/512.gif"
+  },
+  "fear": {
+    "alt": "😱",
+    "webp": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f631/512.webp",
+    "gif": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f631/512.gif"
+  },
+  "disgust": {
+    "alt": "🤢",
+    "webp": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f922/512.webp",
+    "gif": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f922/512.gif"
+  },
+  "neutral": {
+    "alt": "😐",
+    "webp": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.webp",
+    "gif": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif"
+  }
+}

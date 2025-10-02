@@ -1,0 +1,55 @@
+{
+  "happy": [
+    "delighted","happy", "pleased", "glad", "satisfied", "thankful", "joyful", "joyous", "blissful", "cheerful", "thrilled",
+    "gratified", "chuffed", "hopeful", "ecstatic", "smiling", "merry", "tickled", "cheery", "jolly", "optimistic",
+    "laughing", "upbeat", "gleeful", "jovial", "lighthearted", "buoyant", "euphoric", "sunny", "mirthful", "jubilant",
+    "rapturous", "exuberant", "enraptured", "elated", "blithe", "exultant", "beatific", "intoxicated", "gladsome",
+    "exhilarated", "rhapsodic", "jocund", "blithesome", "rosy", "beaming", "gay", "rejoicing", "rhapsodical", "rapt",
+    "sanguine", "entranced"
+  ],
+  "sad": [
+    "unhappy","sad","heartbroken", "depressed", "miserable", "sorry", "bad", "melancholy", "upset", "worried", "sorrowful",
+    "disappointed", "mournful", "uneasy", "hopeless", "saddened", "troubled", "dejected", "gloomy", "heartsick",
+    "doleful", "melancholic", "forlorn", "crestfallen", "depressing", "glum", "disconsolate", "inconsolable",
+    "woebegone", "joyless", "despondent", "downcast", "wretched", "woeful", "brokenhearted", "distressed", "blue",
+    "suicidal", "droopy", "hangdog", "downhearted", "discouraged", "heavyhearted", "down", "low-spirited", "heartsore",
+    "down in the mouth", "low", "tearful", "grieving", "despairing", "aggrieved", "cast down", "somber", "bleak",
+    "regretful", "sunk", "dispirited", "disheartened", "weeping", "morbid", "desolate", "unquiet", "anguished",
+    "lugubrious", "plaintive", "sombre", "dolorous", "morose", "lachrymose", "rueful", "dark", "grey", "cheerless",
+    "dismal", "agonized", "wailing", "sullen", "dreary", "gray", "elegiac", "comfortless", "funereal", "drear", "black",
+    "murky", "darkening", "saturnine"
+  ],
+  "fear": [
+    "anxiety","fear", "fearfulness", "dread", "panic", "terror", "fright", "worry", "horror", "trepidation", "scare", "concern",
+    "dismay", "alarm", "phobia", "nervousness", "alarum", "pang", "apprehension", "agitation", "creeps", "jitters",
+    "consternation", "twinge", "timidity", "perturbation", "cowardice", "disquiet", "qualm", "funk", "willies",
+    "discomposure", "faintheartedness", "timorousness"
+  ],
+  "disgust": [
+    "shocked", "disgust","sick", "angered", "outraged", "angry", "revolted", "sickened", "nauseated", "infuriated", "repulsed",
+    "enraged", "repelled", "upset", "indignant", "displeased", "weary", "irate", "incensed", "fed up", "furious",
+    "livid", "fuming", "apoplectic", "mad", "riled", "sore", "wrought (up)", "worked up", "steaming", "roiled",
+    "rankled", "ticked", "shirty", "cheesed off", "horn-mad", "teed off"
+  ],
+  "angry": [
+    "enraged","angry", "indignant", "outraged", "infuriated", "angered", "mad", "furious", "ballistic", "infuriate", "irate",
+    "annoyed", "passionate", "irritable", "rabid", "sore", "incensed", "wrathful", "fuming", "livid", "apoplectic",
+    "hot", "riled", "inflamed", "choleric", "ireful", "exasperated", "in a huff", "hot under the collar", "hopping mad",
+    "steaming", "wroth", "blue in the face", "aggravated", "bent out of shape", "foaming", "fit to be tied", "in a fume",
+    "enflamed", "shirty", "in a pet", "rankled", "ticked", "cheesed off", "hopping", "resentful", "horn-mad", "roiled",
+    "going crook", "spiteful", "embittered", "seething", "vengeful", "vindictive", "steamed up", "unpleasant", "riley",
+    "antagonistic", "huffy", "ranting", "boiling", "vitriolic", "sulky", "malevolent", "virulent", "bristling", "grumpy",
+    "acrimonious", "petulant", "bitter", "antisocial", "disagreeable", "teed off", "rancorous", "cross", "peevish",
+    "stormy", "perturbed", "antipathetic", "irascible", "fretful", "belligerent", "unfriendly", "grouchy", "snappish",
+    "raving", "bristly", "smoldering", "burning", "disapproving", "distant", "smouldering", "cantankerous", "worked up",
+    "acrid", "sizzling", "icy", "cranky", "wrought (up)", "bilious", "crabby", "cold", "frigid", "querulous", "testy",
+    "pugnacious", "dyspeptic", "churlish", "inimical", "ornery", "ill-tempered", "touchy", "quarrelsome", "inflammable",
+    "argumentative", "contentious", "fussy", "ill-humored", "cool", "disputatious", "sorehead", "soreheaded", "contrary",
+    "quick-tempered", "piqued", "bearish", "put out"
+  ],
+  "neutral": [
+    "independent","normal","neutral", "autonomous", "impartial", "nonpartisan", "sovereign", "on the fence", "nonaligned", "unbiased",
+    "unaffiliated", "noninterventionist", "indifferent", "disinterested", "individualistic", "uninfluenced",
+    "evenhanded", "nonbelligerent", "unprejudiced", "hands-off", "fair", "bipartisan", "sovran"
+  ]
+}
